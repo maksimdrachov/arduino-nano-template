@@ -1,0 +1,6 @@
+*.o
+.idea/
+*.elf
+*.bin
+*.hex
+test
