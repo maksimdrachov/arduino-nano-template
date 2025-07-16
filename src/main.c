@@ -41,6 +41,7 @@ int main(void)
         // Set the LED
         platform_led(led_state);
 
+        platform_kick_watchdog(); // At least once every 8 seconds, otherwise a reboot is initiated
         _delay_ms(1000);
     }
 

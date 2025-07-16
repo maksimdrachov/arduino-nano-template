@@ -10,6 +10,7 @@ void platform_init(void);
 
 void platform_led(const bool on);
 
+/// Make sure to kick the watchdog at least once every 8 seconds!
 void platform_kick_watchdog(void);
 
 /// The call is non-blocking unless the buffer is full. Transmission is interrupt-driven.
